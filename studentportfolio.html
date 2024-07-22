@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravela Chandraditya - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+            color: white;
+        }
+
+        header {
+            background-color: #008B8B;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            display: none;
+        }
+
+        section:target {
+            display: block;
+        }
+
+        #home {
+            display: block;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-image {
+            max-width: 250px;
+            height: auto;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 325px;
+            height: 250px;
+            border: 1px solid #ecf0f1;
+            padding: 5px;
+            background-color: #34495e;
+        }
+
+        .contact-info, .skills-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .contact-info div, .skills-info div {
+            margin: 10px;
+            padding: 20px;
+            background-color: #34495e;
+            border-radius: 10px;
+        }
+
+        .contact-info div h3, .skills-info div h3 {
+            margin-top: 0;
+        }
+
+        a {
+            color: #1abc9c;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        .project {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RAVELA CHANDRADITYA</h1>
+        <h3>WEB DEVELOPER</h3>
+        <p>Welcome to my portfolio. Here you can learn more about me, my projects, skills, and how to contact me.</p>
+        <nav>
+            <ul>
+                <li><a href="#about"><u>About</u></a></li>
+                <li><a href="#projects"><u>Projects</u></a></li>
+                <li><a href="#skills"><u>Skills</u></a></li>
+                <li><a href="#resume"><u>Resume</u></a></li>
+                <li><a href="#contact"><u>Contact</u></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2 align="center">ABOUT:</h2>
+        <div class="profile-container">
+            <img src="profile-image.png" alt="Profile Image" class="profile-image">
+        </div>
+        <p>Focused and enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to various projects,
+           my love for these domains came into being. I am a passionate individual who thrives to build and apply algorithms to solve real-world industry problems.</p>
+        <ul align="center">
+            <strong>Birthday:</strong> 17 May 2004<br>
+            <strong>City:</strong> Ballari, Karnataka, 583103<br>
+            <strong>Phone:</strong> +91 9999999999<br>
+            <strong>Email:</strong> ravelachandraditya2004@gmail.com<br>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>PROJECTS:</h2>
+        <div class="project-container">
+            <div class="project project-web-app">
+                <h3>Student Portal</h3>
+                <p>Using HTML, CSS, JAVASCRIPT, PHP, MYSQL ect.</p>
+                <img src="portal image.png" alt="Student Portal">
+            </div>
+            <div class="project project-web-app">
+                <h3>Shopping Cart</h3>
+                <p>Using C++</p>
+                <img src="shopping-cart.jpg" alt="Shopping Cart">
+            </div>
+            <div class="project project-project">
+                <h3>Battle Ship Game</h3>
+                <p>Using C programming</p>
+                <img src="battleship.jpg" alt="Battle Ship Game">
+            </div>
+            <div class="project project-project">
+                <h3>Sudoku Game</h3>
+                <p>Using C programming</p>
+                <img src="sudoko-game.jpeg" alt="Sudoku Game">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>SKILLS:</h2>
+        <div class="skills-info">
+            <div class="coding-skills">
+                <h3>Coding Skills</h3>
+                <ul>
+                    <li>Programming Languages: C, Python, Java, C++</li>
+                    <li>Web Development: HTML, CSS, JavaScript, ReactJs, PHP, Noje JS</li>
+                    <li>Database Management: MySQL, MongoDB</li>
+                </ul>
+            </div>
+            <div class="communication-skills">
+                <h3>Communication Skills</h3>
+                <ul>
+                    <li>Excellent writting and communication skills</li>
+                    <li>Teamwork: Proven ability to work effectively in a team environment</li>
+                    <li>Problem Solving: Strong analytical and problem-solving abilities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>RESUME:</h2>
+        <a href="ravela chandraditya.pdf" target="_blank">CLICK TO VIEW:</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contacts</h2>
+        <div class="contact-info">
+            <div class="address">
+                <h3>My Address</h3>
+                <p>Siddartha Colony<br>Ballari, 583103<br>Karnataka</p>
+            </div>
+            <div class="email">
+                <h3>Email</h3>
+                <p>ravelachandraditya2004@gmail.com<br>chandraditya_ravela@srmap.edu.in</p>
+            </div>
+            <div class="phone">
+                <h3>CONTACTS:</h3>
+                <p>+91 9999999999</p>
+            </div>
+            <div class="social-profiles">
+                <h3>Social Profiles</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/ravela-chandraditya-356051251/">LinkedIn</a><br>
+                    <a href="https://github.com/chandraditay1705">GitHub</a><br>
+                    <a href="https://x.com/ChandradityaR">Twitter</a><br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function filterSelection(category) {
+            var projects, i;
+            projects = document.getElementsByClassName("project");
+            if (category == "all") category = "";
+            for (i = 0; i < projects.length; i++) {
+                removeClass(projects[i], "show");
+                if (projects[i].className.indexOf(category) > -1) addClass(projects[i], "show");
+            }
+        }
+
+        function addClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function removeClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        filterSelection("all");
+    </script>
+</body>
+</html>
